@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-0DLF9kdB.js";function s(){return e.jsxs("main",{style:{padding:"2rem",fontFamily:"system-ui"},children:[e.jsx("h1",{children:"Welcome"}),e.jsxs("p",{children:["Static Remix + React site. Edit ",e.jsx("code",{children:"app/routes/_index.tsx"})," to get started."]})]})}export{s as default};
