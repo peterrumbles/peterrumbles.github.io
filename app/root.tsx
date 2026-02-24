@@ -1,4 +1,5 @@
 import { Link, Outlet, Scripts } from "@remix-run/react";
+// Styles loaded via <link href="/app.css"> in built index (injected by scripts/inject-favicon.js for GitHub Pages)
 import "./app.css";
 
 export default function App() {
