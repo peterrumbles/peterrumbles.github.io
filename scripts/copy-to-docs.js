@@ -1,4 +1,4 @@
-import { cpSync, rmSync, existsSync } from "node:fs";
+import { cpSync, rmSync, existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -15,4 +15,7 @@ if (existsSync(dest)) {
   rmSync(dest, { recursive: true });
 }
 cpSync(src, dest, { recursive: true });
-console.log("Copied build/client to docs/");
+
+// Required for GitHub Pages: disables Jekyll so files like _index-*.js are served
+writeFileSync(join(dest, ".nojekyll"), "");
+console.log("Copied build/client to docs/ (with .nojekyll for GitHub Pages)");

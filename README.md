@@ -22,8 +22,8 @@ Then open [http://localhost:5173](http://localhost:5173).
 
 ## Deploy (e.g. GitHub Pages)
 
-1. Run `npm run build` (writes static files into **`docs/`**).
-2. Commit and push. In the repo **Settings → Pages**, set source to **Deploy from a branch** and choose the **`/docs`** folder.
+1. Run `npm run build` (writes static files into **`docs/`**, including `.nojekyll` so GitHub Pages serves underscore-prefixed assets like `_index-*.js`).
+2. Commit and push the **`docs/`** folder. In the repo **Settings → Pages**, set source to **Deploy from a branch** and choose the **`/docs`** folder.
 
 ## Project structure
 
