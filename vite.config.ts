@@ -7,4 +7,10 @@ export default defineConfig({
       ssr: false,
     }),
   ],
+  server: {
+    watch: {
+      usePolling: false,
+      ignored: ["**/node_modules/**", "**/build/**", "**/docs/**"],
+    },
+  },
 });
